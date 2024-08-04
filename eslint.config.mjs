@@ -18,6 +18,7 @@ const compat = new FlatCompat({
 })
 
 export default [
+    { files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}'] },
     {
         ignores: ['**/dist', '**/.eslintrc.cjs'],
     },
