@@ -26,6 +26,7 @@ export default [
     'plugin:prettier/recommended'
   ),
   {
+    files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}'], // Add this line to specify the files to be analyzed
     plugins: {
       react,
       '@typescript-eslint': typescriptEslint,
