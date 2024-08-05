@@ -42,7 +42,7 @@ export default [
       sourceType: 'module',
 
       parserOptions: {
-        project: ['./tsconfig.json', './tsconfig.node.json'],
+        project: ['./tsconfig.app.json', './tsconfig.node.json'],
       },
     },
 
