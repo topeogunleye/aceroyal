@@ -10,7 +10,7 @@ describe('Slider', () => {
     expect(image).toBeInTheDocument();
     expect(image).toHaveAttribute('src', 'shawarma.png');
   });
-
+  
   test('adds active class when isActive is true', () => {
     const { container } = render(
       <Slider imageSrc="shawarma.png" isActive={true} />

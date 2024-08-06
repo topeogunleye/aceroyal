@@ -1,14 +1,12 @@
 import React from 'react';
-import Header from '../components/Header';
 import LandingSection from '../components/LandingSection';
 import Carousel from '../components/Carousel';
 
 const Home: React.FC = () => (
-  <main>
-    <Header />
+  <div>
     <LandingSection />
     <Carousel />
-  </main>
+  </div>
 );
 
 export default Home;
