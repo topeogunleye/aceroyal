@@ -8,7 +8,7 @@ describe('Slider', () => {
     );
     const image = getByAltText('shawarma');
     expect(image).toBeInTheDocument();
-    expect(image).toHaveAttribute('src', 'images/shawarma.png');
+    expect(image).toHaveAttribute('src', 'shawarma.png');
   });
 
   test('adds active class when isActive is true', () => {
