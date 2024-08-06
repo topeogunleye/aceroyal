@@ -33,14 +33,21 @@ body {
   background-color: #f8f8f8;
 }
 
-.landing-section {
-  width: 100%;
-  background:
-    linear-gradient(45deg, rgba(70, 69, 67, 0.3), rgba(2, 2, 1, 0.2)),
-    url(./images/background/background.jpg) no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center center;
+@media screen and (min-width: 480px) {
+  .landing-section {
+    width: 100%;
+  }
+
+  .landing-section section h1 {
+    color: var(--fontwhite);
+    font-size: 3.7rem;
+    line-height: 4.6rem;
+    letter-spacing: 0.5px;
+  }
+
+  .order-button {
+
+  }
 }
 
 .landing-section section {
@@ -49,14 +56,6 @@ body {
 
 .landing-section header img {
   height: 187px;
-}
-
-.landing-section section h1 {
-  color: var(--fontwhite);
-  font-size: 3.7rem;
-  line-height: 4.6rem;
-  letter-spacing: 0.5px;
-  font-family: 'Merriweather', serif;
 }
 
 .landing-section section h1 span {
@@ -98,6 +97,10 @@ body {
 
 .landing-section .arrows {
   padding: 10px 0;
+  width: 80vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .landing-section .arrows .arrow {
@@ -122,28 +125,26 @@ body {
     'opsz' 48;
 }
 
-/* Mobile Screens */
-@media screen and (max-width: 480px) {
-  .landing-section {
-    background:
-      linear-gradient(45deg, rgba(70, 69, 67, 0.9), rgba(2, 2, 1, 0.2)),
-      url(./images/background.jpg) no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center center;
-  }
+.landing-section {
+  background:
+    linear-gradient(45deg, rgba(70, 69, 67, 0.9), rgba(2, 2, 1, 0.2)),
+    url(./images/background.jpg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+}
 
-  .landing-section section h1 {
-    font-size: 2.5rem;
-    line-height: 3rem;
-    padding: 0 3px;
-  }
+.landing-section section h1 {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  padding: 0 3px;
+  font-family: 'Merriweather', serif;
+}
 
-  .order-button {
-    margin: 30px 0;
-    height: 20px;
-    padding: 25px;
-  }
+.order-button {
+  margin: 30px 0;
+  height: 20px;
+  padding: 25px;
 }
 
 /* Responsive Design */
