@@ -127,7 +127,7 @@ body {
   .landing-section {
     background:
       linear-gradient(45deg, rgba(70, 69, 67, 0.9), rgba(2, 2, 1, 0.2)),
-      url(./images/background/background.jpg) no-repeat;
+      url(./images/background.jpg) no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
