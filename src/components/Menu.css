@@ -1,0 +1,57 @@
+.menu {
+  text-align: center;
+  padding: 20px;
+}
+
+.menu h2 {
+  color: #27ae60; /* Green color */
+}
+
+.menu-items {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.menu-item {
+  width: 200px;
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.menu-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+.menu-item h3 {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.menu-item p {
+  font-size: 1em;
+  color: #333;
+}
+
+.rating {
+  color: #f39c12; /* Star color */
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button.view-more {
+  background-color: #f39c12;
+  color: #fff;
+}
