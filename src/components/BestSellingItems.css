@@ -20,10 +20,12 @@
 }
 
 .items-carousel {
-  display: flex;
-  overflow: hidden;
-  position: relative;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  align-items: start;
+  padding: 0 10px;
 }
 
 .item-card {
@@ -59,26 +61,42 @@
 }
 
 .carousel-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: #fff;
-  border: none;
-  cursor: pointer;
-  font-size: 2rem;
-  padding: 10px;
-  z-index: 1;
+  display: none; /* Hiding the buttons since we are not implementing the carousel functionality in this step */
 }
 
-.carousel-button.left {
-  left: 10px;
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .best-selling-items h2 {
+    font-size: 2.5rem;
+  }
+
+  .best-selling-items p {
+    font-size: 1.2rem;
+  }
+
+  .item-card h3 {
+    font-size: 1.5rem;
+  }
+
+  .item-card p {
+    font-size: 1.2rem;
+  }
 }
 
-.carousel-button.right {
-  right: 10px;
-}
+@media (min-width: 1024px) {
+  .items-carousel {
+    gap: 30px;
+  }
 
-.carousel-button:hover {
-  background-color: #ffa500;
-  color: #fff;
+  .item-card {
+    max-width: 220px;
+  }
+
+  .item-card h3 {
+    font-size: 1.8rem;
+  }
+
+  .item-card p {
+    font-size: 1.3rem;
+  }
 }
