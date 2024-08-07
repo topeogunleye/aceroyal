@@ -1,3 +1,4 @@
+import React from 'react';
 import './BestSellingItems.css';
 
 const bestSellingItems = [
@@ -31,7 +32,7 @@ const bestSellingItems = [
   },
 ];
 
-const BestSellingItems = () => {
+const BestSellingItems: React.FC = () => {
   return (
     <section className="best-selling-items">
       <h2>
@@ -44,7 +45,7 @@ const BestSellingItems = () => {
       </p>
       <div className="items-carousel">
         {bestSellingItems.map((item, index) => (
-          <div key={index} className="item-card">
+          <div key={index} className="item-card" role="article">
             <img src={item.imageUrl} alt={item.title} />
             <h3>{item.title}</h3>
             <div className="rating">{'★'.repeat(item.rating)}</div>
