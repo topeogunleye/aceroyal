@@ -1,27 +1,30 @@
-import React from 'react';
 import './CustomerChoice.css';
+import warmEnjoyIcon from '../assets/icons/warm-enjoy.png';
+import savourReplayIcon from '../assets/icons/savour-replay.png';
+import deliveryServicesIcon from '../assets/icons/delivery-services.png';
+import organicFoodIcon from '../assets/icons/organic-food.png';
 
 const features = [
   {
-    icon: '🍜', // You can replace with actual icons
+    icon: warmEnjoyIcon,
     title: 'Warm & Enjoy',
     description:
       'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.',
   },
   {
-    icon: '⭐', // You can replace with actual icons
+    icon: savourReplayIcon,
     title: 'Savour & Replay',
     description:
       'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.',
   },
   {
-    icon: '🍽️', // You can replace with actual icons
+    icon: deliveryServicesIcon,
     title: 'Delivery Services',
     description:
       'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.',
   },
   {
-    icon: '🥗', // You can replace with actual icons
+    icon: organicFoodIcon,
     title: 'Organic Food',
     description:
       'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.',
@@ -43,7 +46,7 @@ const CustomerChoice = () => {
         <div className="features-grid">
           {features.map((feature, index) => (
             <div key={index} className="feature-card">
-              <div className="icon">{feature.icon}</div>
+              <img src={feature.icon} alt={feature.title} className="icon" />
               <h3>{feature.title}</h3>
               <p>{feature.description}</p>
             </div>
