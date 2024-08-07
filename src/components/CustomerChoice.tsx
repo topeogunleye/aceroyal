@@ -1,60 +1,65 @@
+import React from 'react';
 import './CustomerChoice.css';
-import warmEnjoyIcon from '../assets/icons/warm-enjoy.png';
-import savourReplayIcon from '../assets/icons/savour-replay.png';
-import deliveryServicesIcon from '../assets/icons/delivery-services.png';
-import organicFoodIcon from '../assets/icons/organic-food.png';
 
-const features = [
-  {
-    icon: warmEnjoyIcon,
-    title: 'Warm & Enjoy',
-    description:
-      'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.',
-  },
-  {
-    icon: savourReplayIcon,
-    title: 'Savour & Replay',
-    description:
-      'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.',
-  },
-  {
-    icon: deliveryServicesIcon,
-    title: 'Delivery Services',
-    description:
-      'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.',
-  },
-  {
-    icon: organicFoodIcon,
-    title: 'Organic Food',
-    description:
-      'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.',
-  },
-];
+interface FeatureCardProps {
+  iconSrc: string;
+  title: string;
+  description: string;
+}
 
-const CustomerChoice = () => {
+const FeatureCard: React.FC<FeatureCardProps> = ({
+  iconSrc,
+  title,
+  description,
+}) => {
   return (
-    <section className="customer-choice">
+    <div className="feature-card">
+      <img src={iconSrc} alt={title} className="icon" />
+      <h3>{title}</h3>
+      <p>{description}</p>
+    </div>
+  );
+};
+
+const CustomerChoice: React.FC = () => {
+  return (
+    <div className="customer-choice">
       <div className="customer-choice-content">
-        <h2>
-          The Choice of <span>Customers</span>
-        </h2>
-        <p>
-          At vero eos et accusamus et iusto odio dignissimos ducimus qui
-          blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
-          et...
-        </p>
         <div className="features-grid">
-          {features.map((feature, index) => (
-            <div key={index} className="feature-card">
-              <img src={feature.icon} alt={feature.title} className="icon" />
-              <h3>{feature.title}</h3>
-              <p>{feature.description}</p>
-            </div>
-          ))}
+          <FeatureCard
+            iconSrc="https://img.icons8.com/ios-filled/50/000000/butter.png"
+            title="Warm & Enjoy"
+            description="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form,"
+          />
+          <FeatureCard
+            iconSrc="https://img.icons8.com/ios-filled/50/000000/star.png"
+            title="Savour & Replay"
+            description="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form,"
+          />
+          <FeatureCard
+            iconSrc="https://img.icons8.com/ios-filled/50/000000/delivery.png"
+            title="Delivery Services"
+            description="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form,"
+          />
+          <FeatureCard
+            iconSrc="https://img.icons8.com/ios-filled/50/000000/salad.png"
+            title="Organic Food"
+            description="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form,"
+          />
         </div>
-        <button className="view-more-button">View More →</button>
+        <div className="customer-choice-text">
+          <h2>
+            The Choice of <span>Customers</span>
+          </h2>
+          <p>
+            At vero eos et accusamus et iusto odio dignissimos ducimus qui
+            blanditiis praesentium voluptatum deleniti atque corrupti quos
+            dolores et...
+          </p>
+          <button className="view-more-button">View More</button>
+        </div>
       </div>
-    </section>
+    </div>
   );
 };
 
