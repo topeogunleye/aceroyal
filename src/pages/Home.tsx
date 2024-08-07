@@ -3,6 +3,7 @@ import LandingSection from '../components/LandingSection';
 import Carousel from '../components/Carousel';
 import CulinaryFavorites from '../components/CulinaryFavorites';
 import BestSellingItems from '../components/BestSellingItems';
+import CustomerChoice from '../components/CustomerChoice';
 
 const Home: React.FC = () => (
   <div>
@@ -10,6 +11,7 @@ const Home: React.FC = () => (
     <Carousel />
     <CulinaryFavorites />
     <BestSellingItems />
+    <CustomerChoice />
   </div>
 );
 
