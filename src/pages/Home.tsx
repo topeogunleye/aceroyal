@@ -4,6 +4,8 @@ import Carousel from '../components/Carousel';
 import CulinaryFavorites from '../components/CulinaryFavorites';
 import BestSellingItems from '../components/BestSellingItems';
 import CustomerChoice from '../components/CustomerChoice';
+import Menu from '../components/Menu';
+import ReservationForm from '../components/ReservationForm';
 
 const Home: React.FC = () => (
   <div>
@@ -12,6 +14,8 @@ const Home: React.FC = () => (
     <CulinaryFavorites />
     <BestSellingItems />
     <CustomerChoice />
+    <Menu />
+    <ReservationForm />
   </div>
 );
 
