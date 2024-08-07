@@ -1,4 +1,4 @@
-import React from 'react';
+import './CulinaryFavorites.css'
 
 const CulinaryFavorites: React.FC = () => (
   <div className="content-container">
