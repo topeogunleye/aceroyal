@@ -4,33 +4,27 @@ import './Testimonials.css';
 const testimonials = [
   {
     name: 'Armas Rosie',
+    image: 'https://images.pexels.com/photos/2664216/pexels-photo-2664216.jpeg',
     text: 'Appreciation to those who sweeten our journey – our cherished patrons. Your unwavering support is the sugar in our recipe, infusing each moment with a delightful sweetness.',
-    image: 'https://example.com/armas-rosie.jpg', // Placeholder image URL
-    highlight: true,
+    isHighlighted: true,
   },
   {
     name: 'Stuart Mark',
-    text: 'Pen arrange link background community line figma horizontal link. Follower layer content hand undo. Figma edit flows',
-    image: 'https://example.com/stuart-mark.jpg', // Placeholder image URL
-    highlight: false,
+    image: 'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg',
+    text: 'Pen arrange link background community line figma horizontal link. Follower layer content hand undo. Figma edit flows.',
+    isHighlighted: false,
+  },
+  {
+    name: 'Stuart Mark',
+    image: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg',
+    text: 'On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble...',
+    isHighlighted: false,
   },
   {
     name: 'Megan Johnson',
-    text: 'Pen arrange link background community line figma horizontal link. Follower layer content hand undo. Figma edit flows',
-    image: 'https://example.com/megan-johnson.jpg', // Placeholder image URL
-    highlight: false,
-  },
-  {
-    name: 'Megan Johnson',
-    text: 'Pen arrange link background community line figma horizontal link. Follower layer content hand undo. Figma edit flows',
-    image: 'https://example.com/megan-johnson.jpg', // Placeholder image URL
-    highlight: false,
-  },
-  {
-    name: 'Megan Johnson',
-    text: 'Pen arrange link background community line figma horizontal link. Follower layer content hand undo. Figma edit flows',
-    image: 'https://example.com/megan-johnson.jpg', // Placeholder image URL
-    highlight: false,
+    image: 'https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg',
+    text: 'Pen arrange link background figma horizontal link. Follower layer content hand undo. Figma edit flows.',
+    isHighlighted: false,
   },
 ];
 
@@ -56,7 +50,7 @@ const Testimonials: React.FC = () => {
       <div className="testimonials">
         {testimonials.map((testimonial, index) => (
           <div
-            className={`testimonial ${testimonial.highlight ? 'highlight' : ''}`}
+            className={`testimonial ${testimonial.isHighlighted ? 'highlight' : ''}`}
             key={index}
           >
             <img src={testimonial.image} alt={`${testimonial.name}`} />
