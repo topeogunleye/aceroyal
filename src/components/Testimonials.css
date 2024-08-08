@@ -7,7 +7,7 @@
   margin: 0 auto;
 }
 
-h2 {
+.testimonials-container .testimonial-header h2 {
   font-size: 2em;
   margin-bottom: 10px;
   font-family: 'Georgia, serif';
@@ -15,11 +15,11 @@ h2 {
   color: #333;
 }
 
-h2 span {
+.testimonials-container .testimonial-header h2 span {
   color: #62a64a; /* Green color for highlight */
 }
 
-p {
+.testimonials-container .testimonial-header p {
   margin-bottom: 20px;
   color: #333333;
   font-size: 1em;

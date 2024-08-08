@@ -15,13 +15,13 @@
   margin-bottom: 20px;
 }
 
+.reservation-container .text-container {
+  color: #ddd;
+}
+
 .form-container {
   background-color: #ffffff;
   color: #000000;
-}
-
-.reservation-container .text-container {
-  color: #ffffff;
 }
 
 h2 {
