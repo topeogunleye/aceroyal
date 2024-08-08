@@ -8,28 +8,38 @@ const ReservationForm: React.FC = () => {
         <h2>Smooth Reservations for Memorable Dining Experiences</h2>
         <form>
           <div className="form-group">
-            <label>Your Name*</label>
-            <input type="text" placeholder="Your full name" required />
+            <label htmlFor="full_name">Your Name*</label>
+            <input
+              type="text"
+              placeholder="Your full name"
+              required
+              id="full_name"
+            />
           </div>
           <div className="form-group">
-            <label>Your email*</label>
-            <input type="email" placeholder="Your email" required />
+            <label htmlFor="email">Your email*</label>
+            <input type="email" placeholder="Your email" required id="email" />
           </div>
           <div className="form-group">
-            <label>Phone number*</label>
-            <input type="tel" placeholder="Your phone number" required />
+            <label htmlFor="phone-num">Phone number*</label>
+            <input
+              type="tel"
+              placeholder="Your phone number"
+              required
+              id="phone-num"
+            />
           </div>
           <div className="form-group">
-            <label>Reservation Date*</label>
-            <input type="date" required />
+            <label htmlFor="date">Reservation Date*</label>
+            <input type="date" required id="date" />
           </div>
           <div className="form-group">
-            <label>Reservation Time*</label>
-            <input type="time" required />
+            <label htmlFor="time">Reservation Time*</label>
+            <input type="time" required id="time" />
           </div>
           <div className="form-group">
-            <label>Person*</label>
-            <select required>
+            <label htmlFor="Num-Persons">Person*</label>
+            <select required id="Num-Persons">
               <option>Person-1</option>
               <option>Person-2</option>
               <option>Person-3</option>
@@ -37,8 +47,12 @@ const ReservationForm: React.FC = () => {
             </select>
           </div>
           <div className="form-group">
-            <label>Notes*</label>
-            <textarea placeholder="Any special requests or notes" required />
+            <label htmlFor="notes">Notes*</label>
+            <textarea
+              placeholder="Any special requests or notes"
+              required
+              id="notes"
+            />
           </div>
           <button type="submit">Request Reservation</button>
         </form>
