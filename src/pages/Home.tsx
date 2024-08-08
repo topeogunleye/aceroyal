@@ -6,6 +6,7 @@ import BestSellingItems from '../components/BestSellingItems';
 import CustomerChoice from '../components/CustomerChoice';
 import Menu from '../components/Menu';
 import ReservationForm from '../components/ReservationForm';
+import Testimonials from '../components/Testimonials';
 
 const Home: React.FC = () => (
   <div>
@@ -16,6 +17,7 @@ const Home: React.FC = () => (
     <CustomerChoice />
     <Menu />
     <ReservationForm />
+    <Testimonials />
   </div>
 );
 

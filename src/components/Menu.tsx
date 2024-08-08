@@ -10,49 +10,49 @@ const menuItems = [
   },
   {
     name: 'Testy Beef Burger',
-    price: '10.00 USD',
+    price: '13.00 USD',
     image:
       'https://images.pexels.com/photos/604969/pexels-photo-604969.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
     rating: 5,
   },
   {
     name: 'Philly Steak Sandwich',
-    price: '10.00 USD',
+    price: '15.00 USD',
     image:
       'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
     rating: 5,
   },
   {
     name: 'Lemon Ice Tea',
-    price: '10.00 USD',
+    price: '12.00 USD',
     image:
       'https://images.pexels.com/photos/1207926/pexels-photo-1207926.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
     rating: 5,
   },
   {
     name: 'Pizza Margherita',
-    price: '10.00 USD',
+    price: '17.00 USD',
     image:
       'https://images.pexels.com/photos/2619967/pexels-photo-2619967.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
     rating: 5,
   },
   {
     name: 'Chicken Wings',
-    price: '10.00 USD',
+    price: '16.00 USD',
     image:
       'https://images.pexels.com/photos/1624487/pexels-photo-1624487.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
     rating: 5,
   },
   {
     name: 'Caesar Salad',
-    price: '10.00 USD',
+    price: '8.70 USD',
     image:
       'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
     rating: 5,
   },
   {
     name: 'Strawberry Smoothie',
-    price: '10.00 USD',
+    price: '9.00 USD',
     image:
       'https://images.pexels.com/photos/3434527/pexels-photo-3434527.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
     rating: 5,
