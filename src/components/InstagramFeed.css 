@@ -1,0 +1,24 @@
+/* src/components/InstagramFeed.css */
+.instagram-feed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  padding: 10px;
+}
+
+.instagram-post {
+  margin: 0 5px;
+  transition: transform 0.3s ease;
+}
+
+.instagram-post img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.instagram-post:hover {
+  transform: scale(1.05);
+}
