@@ -22,11 +22,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 40px 0 0;
 }
 
 .customer-choice h2 {
   font-size: 2.5rem;
-  margin-bottom: 20px;
 }
 
 .customer-choice h2 span {
@@ -103,4 +103,10 @@
 
 .view-more-button:hover {
   background-color: darkorange;
+}
+
+@media (768px < width) {
+  .customer-choice-text {
+    justify-content: start;
+  }
 }
