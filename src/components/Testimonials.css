@@ -1,0 +1,127 @@
+/* Mobile-first styles */
+.testimonials-container {
+  padding: 20px;
+  background-color: #f7f5ef;
+  text-align: left;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  font-family: 'Georgia, serif';
+  font-weight: bold;
+  color: #333;
+}
+
+h2 span {
+  color: #62a64a; /* Green color for highlight */
+}
+
+p {
+  margin-bottom: 20px;
+  color: #333333;
+  font-size: 1em;
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.testimonial {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.testimonial img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.testimonial h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #333;
+  font-family: 'Arial, sans-serif';
+  font-weight: bold;
+}
+
+.testimonial p {
+  color: #666666;
+  font-family: 'Arial, sans-serif';
+}
+
+.highlight {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.highlight p {
+  color: #cccccc;
+}
+
+.testimonial-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.testimonial-navigation {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.testimonial-navigation button {
+  background-color: #ffcc00;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+  color: #ffffff;
+  font-family: 'Arial, sans-serif';
+  font-weight: bold;
+}
+
+.testimonial-navigation button:hover {
+  background-color: #ff9900;
+}
+
+/* Media queries for larger screens */
+@media (min-width: 768px) {
+  .testimonials {
+    flex-direction: row;
+    justify-content: space-around;
+    overflow-x: hidden;
+  }
+
+  .testimonial {
+    min-width: 27%;
+  }
+
+  .testimonial:nth-child(even) {
+    width: 32%; /* Smaller cards take up about a third of the container */
+    height: 80%
+  }
+
+  .testimonial-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+}
